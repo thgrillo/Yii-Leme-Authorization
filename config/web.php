@@ -23,6 +23,10 @@ $config = [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
+        'authManager' => [
+            //'class' => 'yii\rbac\PhpManager', //adicionado no curso
+            'class' => 'yii\rbac\DbManager', //adicionado no curso ./yii migrate --migrationPath=@yii/rbac/migrations/
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
